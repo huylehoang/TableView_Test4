@@ -1,0 +1,17 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "9056d05fc2f2f1985fdf3411cdce3607"
+build_time: [1572840668, 163897000]
+inputs:
+  "/Users/Leex/tableView_Test4/tableView_Test4/MainView/CollectionCell/ItemCell.swift": [1571244024, 895989639]
+  "/Users/Leex/tableView_Test4/tableView_Test4/Extensions/Extension+UIView.swift": [1571511836, 975974476]
+  "/Users/Leex/tableView_Test4/tableView_Test4/MainView/Main/MainComponents.swift": [1571764341, 912109408]
+  "/Users/Leex/tableView_Test4/tableView_Test4/MainView/ViewController.swift": [1571726390, 797341096]
+  "/Users/Leex/tableView_Test4/tableView_Test4/AppDelegate.swift": [1570696790, 330550158]
+  "/Users/Leex/tableView_Test4/tableView_Test4/MainView/TableCell/MainCell.swift": [1572369506, 416761905]
+  "/Users/Leex/tableView_Test4/tableView_Test4/MainView/Main/MainTableViewConfig.swift": [1572369851, 613520319]
+  "/Users/Leex/tableView_Test4/tableView_Test4/MainView/CellStyleBuilder/CustomCell.swift": [1572369293, 97438726]
+  "/Users/Leex/tableView_Test4/tableView_Test4/MainView/Model/CellModel.swift": [1571415397, 377344414]
+  "/Users/Leex/tableView_Test4/tableView_Test4/MainView/CellStyleBuilder/CellStyleBuilder.swift": [1572369168, 230072684]
+  "/Users/Leex/tableView_Test4/tableView_Test4/Global.swift": [1570791136, 468879787]
+  "/Users/Leex/tableView_Test4/tableView_Test4/MainView/Main/MainViewModel.swift": [1572601571, 466076655]
+  "/Users/Leex/tableView_Test4/tableView_Test4/MainView/Main/MainCollectionConfig.swift": [1572369017, 810409697]

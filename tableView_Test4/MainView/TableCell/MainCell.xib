@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainCell" id="KGk-i7-Jjw" customClass="MainCell" customModule="tableView_Test4" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Txy-eX-8yg">
+                        <rect key="frame" x="92" y="0.0" width="220" height="44"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pE8-9d-Woa">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBc-js-w0g">
+                        <rect key="frame" x="8" y="8" width="80" height="28"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAg-s3-JMR">
+                                <rect key="frame" x="8" y="8" width="64" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hAg-s3-JMR" secondAttribute="bottom" constant="8" id="1SP-b9-aTZ"/>
+                            <constraint firstItem="hAg-s3-JMR" firstAttribute="leading" secondItem="OBc-js-w0g" secondAttribute="leading" constant="8" id="ezB-7x-2qY"/>
+                            <constraint firstItem="hAg-s3-JMR" firstAttribute="top" secondItem="OBc-js-w0g" secondAttribute="top" constant="8" id="rYS-xo-eLc"/>
+                            <constraint firstAttribute="trailing" secondItem="hAg-s3-JMR" secondAttribute="trailing" constant="8" id="xzw-xX-a4F"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="OBc-js-w0g" secondAttribute="bottom" constant="8" id="0sJ-EY-QIn"/>
+                    <constraint firstItem="OBc-js-w0g" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1/4" id="48x-BL-xgf"/>
+                    <constraint firstItem="OBc-js-w0g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="4pw-Ka-QPZ"/>
+                    <constraint firstItem="OBc-js-w0g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="WNO-qj-ths"/>
+                    <constraint firstItem="Txy-eX-8yg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bXg-7q-WSQ"/>
+                    <constraint firstAttribute="trailing" secondItem="Txy-eX-8yg" secondAttribute="trailing" constant="8" id="ji8-8a-zVY"/>
+                    <constraint firstItem="Txy-eX-8yg" firstAttribute="leading" secondItem="OBc-js-w0g" secondAttribute="trailing" constant="4" id="qpq-XV-JHF"/>
+                    <constraint firstAttribute="bottom" secondItem="Txy-eX-8yg" secondAttribute="bottom" id="s8k-jR-sJI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="Txy-eX-8yg" id="JhQ-JJ-9aJ"/>
+                <outlet property="lblTitle" destination="hAg-s3-JMR" id="mBV-2Z-zfM"/>
+                <outlet property="mainContainer" destination="OBc-js-w0g" id="UG5-Rw-wcf"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="120"/>
+        </tableViewCell>
+    </objects>
+</document>
